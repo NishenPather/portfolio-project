@@ -4,4 +4,4 @@ from .models import Job
 
 def home(request):
     jobs = Job.objects
-    return render(request,'jobs/home.html',{'jobs':jobs}) #automatically looks inside templates folder
+    return render(request,'jobs/home.html',{'jobs':jobs}) #automatically looks inside templates folder for home.html
